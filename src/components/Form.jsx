@@ -20,7 +20,7 @@ function Form({ updateNotes, loading }) {
     fetchNotes(inputs)
       .then((data) => {
         console.log(data);
-        updateNotes(data[0]);
+        updateNotes(data[0], data[1], data[2]);
       })
       .catch((error) => {
         console.warn(error);
